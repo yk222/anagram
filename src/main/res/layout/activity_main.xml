@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.sec.ex1.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Guess the word" />
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/tv_info"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/et_guess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_word"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="word"
+        android:text="" />
+
+    <Button
+        android:id="@+id/b_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECK"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_guess"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/b_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Chronometer
+        android:id="@+id/chronometer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_new"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="81dp"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
